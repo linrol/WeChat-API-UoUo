@@ -10,15 +10,30 @@
 ## 特性
 
 - 使用简单，引入依赖即可
+
 - 支持本地图片和终端输出二维码
+
 - 本地自动登录
+
 - 支持文本、图片、视频、撤回消息等
+
 - 支持发送文本、图片、附件
+
 - 注解绑定消息监听
+
 - 群聊、单聊支持
+
 - 添加好友验证
+
 - 撤回消息获取
+
 - JDK7+
+
+  
+
+## 存在问题
+
+> 1. 首次登陆需要扫码登录两次才可登录成功(已有解决思路)
 
 ## 使用
 
@@ -135,5 +150,6 @@ boolean sendFileName(String name, String filePath);
 
 ## 开源协议
 
-原开源协议 [MIT](https://github.com/biezhi/wechat-api/blob/master/LICENSE)
+原开源协议 
+
 当前版本开源协议协议[Mozilla ](https://github.com/UoUoio/WeChat-API-UoUo/blob/master/LICENSE)"使用时请注意声明作者名称:  青衫 / UoUoio"
