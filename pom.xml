@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.uouo</groupId>
-    <artifactId>wechat-api-uouo</artifactId>
+    <artifactId>wechat</artifactId>
     <version>1.0.0</version>
     <name>wechat-api-uouo</name>
 

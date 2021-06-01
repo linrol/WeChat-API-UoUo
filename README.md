@@ -1,17 +1,11 @@
 # 重大更新!!   
 #   解决个人微信号无法登录网页版本的问题, 现已全面支持所有微信号
 
-基于微信网页版JAVA项目, 升级为UOS版, 解决网页版不能登录的问题  [点击前往原项目地址](https://github.com/biezhi/wechat-api)
+**基于微信网页版JAVA项目, 升级为UOS协议, 解决大量用户不能登录网页版的问题**  [原项目地址](https://github.com/biezhi/wechat-api)
 
 
 
 [在线文档](https://biezhi.github.io/wechat-api/)
-
-[![](https://img.shields.io/travis/biezhi/wechat-api.svg)](https://travis-ci.org/biezhi/wechat-api)
-[![](https://img.shields.io/maven-central/v/io.github.biezhi/wechat-api.svg)](https://mvnrepository.com/artifact/io.github.biezhi/wechat-api)
-[![](https://img.shields.io/badge/license-MIT-FF0080.svg)](https://github.com/biezhi/wechat-api/blob/master/LICENSE)
-[![@biezhi on zhihu](https://img.shields.io/badge/zhihu-%40biezhi-red.svg)](https://www.zhihu.com/people/biezhi)
-[![](https://img.shields.io/github/followers/biezhi.svg?style=social&label=Follow%20Me)](https://github.com/biezhi)
 
 ## 特性
 
@@ -30,13 +24,13 @@
 
 本地开发的同学请先安装 [lombok](https://projectlombok.org/) 插件并确保你的JDK环境是1.7+
 
-引入 `maven` 依赖
+引入 `maven` 依赖 
 
 ```xml
 <dependency>
-    <groupId>io.uouo.biezhi</groupId>
-    <artifactId>wechat-api</artifactId>
-    <version>1.0.6</version>
+    <groupId>io.uouo</groupId>
+    <artifactId>wechat</artifactId>
+    <version>1.0.0</version>
 </dependency>
 ```
 
@@ -141,4 +135,5 @@ boolean sendFileName(String name, String filePath);
 
 ## 开源协议
 
-[MIT](https://github.com/biezhi/wechat-api/blob/master/LICENSE)
+原开源协议 [MIT](https://github.com/biezhi/wechat-api/blob/master/LICENSE)
+当前版本开源协议协议[Mozilla ](https://github.com/UoUoio/WeChat-API-UoUo/blob/master/LICENSE)"使用时请注意声明作者名称:  青衫 / UoUoio"
