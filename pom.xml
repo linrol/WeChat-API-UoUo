@@ -9,25 +9,26 @@
     <version>1.0.0</version>
     <name>wechat-api-uouo</name>
 
-    <url>https://github.com/biezhi/wechat-api</url>
-    <description>wechat-api</description>
+    <url>https://github.com/UoUoio/WeChat-API-UoUo</url>
+    <description>WeChat-API-UoUo</description>
 
     <licenses>
         <license>
-            <name>The Apache Software License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <name>Mozilla Public License 2.0</name>
+            <url>https://github.com/UoUoio/WeChat-API-UoUo/blob/master/LICENSE</url>
         </license>
     </licenses>
+
     <developers>
         <developer>
-            <name>biezhi</name>
-            <email>biezhi.me@gmail.com</email>
+            <name>UoUoio</name>
+            <email>2940500@qq.com</email>
         </developer>
     </developers>
     <scm>
-        <connection>scm:git@github.com:biezhi/wechat-api.git</connection>
-        <developerConnection>scm:git@github.com:biezhi/wechat-api.git</developerConnection>
-        <url>git@github.com:biezhi/wechat-api.git</url>
+        <connection>scm:git@github.com:UoUoio/WeChat-API-UoUo.git</connection>
+        <developerConnection>scm:git@github.com:UoUoio/WeChat-API-UoUo.git</developerConnection>
+        <url>git@github.com:UoUoio/WeChat-API-UoUo.git</url>
     </scm>
 
     <dependencies>
