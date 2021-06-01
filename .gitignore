@@ -115,3 +115,5 @@ buildNumber.properties
 !/.mvn/wrapper/maven-wrapper.jar
 
 /assets/
+WeChat-API-UoUo.iml
+.idea*

@@ -1,6 +1,9 @@
-# wechat-api
+# 重大更新!!   
+#   解决个人微信号无法登录网页版本的问题, 现已全面支持所有微信号
 
-wechat-api 是微信个人号的Java版本API，让个人号具备更多能力，提供方便的接口调用。
+基于微信网页版JAVA项目, 升级为UOS版, 解决网页版不能登录的问题  [点击前往原项目地址](https://github.com/biezhi/wechat-api)
+
+
 
 [在线文档](https://biezhi.github.io/wechat-api/)
 
@@ -31,7 +34,7 @@ wechat-api 是微信个人号的Java版本API，让个人号具备更多能力�
 
 ```xml
 <dependency>
-    <groupId>io.github.biezhi</groupId>
+    <groupId>io.uouo.biezhi</groupId>
     <artifactId>wechat-api</artifactId>
     <version>1.0.6</version>
 </dependency>

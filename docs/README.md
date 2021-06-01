@@ -18,7 +18,7 @@
 
 ```xml
 <dependency>
-    <groupId>io.github.biezhi</groupId>
+    <groupId>io.uouo.biezhi</groupId>
     <artifactId>wechat-api</artifactId>
     <version>1.0.6</version>
 </dependency>
@@ -28,7 +28,7 @@
 
 ```xml
 <dependency>
-    <groupId>io.github.biezhi</groupId>
+    <groupId>io.uouo.biezhi</groupId>
     <artifactId>wechat-api</artifactId>
     <version>1.0.6</version>
     <exclusions>
