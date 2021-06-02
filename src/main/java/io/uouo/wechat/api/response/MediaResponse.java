@@ -8,7 +8,7 @@ import lombok.EqualsAndHashCode;
  * 附件响应体
  *
  * @author biezhi
- * @date 2018/1/20
+ * @since 2018/1/20
  */
 @Data
 @EqualsAndHashCode(callSuper = true)

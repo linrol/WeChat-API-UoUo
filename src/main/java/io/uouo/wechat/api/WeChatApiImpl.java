@@ -38,7 +38,7 @@ import static io.uouo.wechat.api.constant.Constant.*;
  * 微信API实现
  *
  * @author biezhi
- * @date 2018/1/21
+ * @since 2018/1/21
  */
 @Slf4j
 public class WeChatApiImpl implements WeChatApi {
@@ -545,7 +545,7 @@ public class WeChatApiImpl implements WeChatApi {
      * 根据备注或昵称查找账户
      *
      * @param name
-     * @return
+     *
      */
     @Override
     public Account getAccountByName(String name) {

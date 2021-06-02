@@ -19,7 +19,7 @@ import java.util.regex.Pattern;
  * 微信公共静态方法
  *
  * @author biezhi
- * @date 2018/1/19
+ * @since 2018/1/19
  */
 @Slf4j
 public class WeChatUtils {
@@ -32,7 +32,7 @@ public class WeChatUtils {
      *
      * @param reg
      * @param text
-     * @return
+     *
      */
     public static String match(String reg, String text) {
         Pattern pattern = Pattern.compile(reg);
@@ -54,7 +54,7 @@ public class WeChatUtils {
      * 处理emoji表情、HTML转义符
      *
      * @param msg
-     * @return
+     *
      */
     public static String formatMsg(String msg) {
         msg = msg.replace("&lt;", "<")
@@ -67,7 +67,7 @@ public class WeChatUtils {
      * 获取文件 MimeType
      *
      * @param fileUrl
-     * @return
+     *
      */
     public static String getMimeType(String fileUrl) {
         FileNameMap fileNameMap = URLConnection.getFileNameMap();

@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.uouo</groupId>
-    <artifactId>wechat</artifactId>
+    <artifactId>wechat-api-uouo</artifactId>
     <version>1.0.0</version>
     <name>wechat-api-uouo</name>
 
@@ -34,6 +34,11 @@
         <developerConnection>scm:git@github.com:UoUoio/WeChat-API-UoUo.git</developerConnection>
         <url>git@github.com:UoUoio/WeChat-API-UoUo.git</url>
     </scm>
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>9</version>
+    </parent>
 
     <dependencies>
 
@@ -83,8 +88,18 @@
             <version>1.16.18</version>
             <scope>provided</scope>
         </dependency>
-
     </dependencies>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>sonatype-nexus-snapshots</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>sonatype-nexus-staging</id>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
     <build>
         <plugins>
@@ -92,8 +107,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
         </plugins>

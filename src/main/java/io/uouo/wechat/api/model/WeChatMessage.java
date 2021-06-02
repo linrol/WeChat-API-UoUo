@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
  * 微信消息，封装了原始消息
  *
  * @author biezhi
- * @date 2018/1/20
+ * @since 2018/1/20
  */
 @Data
 @Builder
@@ -102,7 +102,7 @@ public class WeChatMessage {
     /**
      * 获取发送人姓名如果有备注则优先显示备注，否则显示昵称
      *
-     * @return
+     *
      */
     public String getName() {
         return StringUtils.isEmpty(fromRemarkName) ? this.fromNickName : this.fromRemarkName;

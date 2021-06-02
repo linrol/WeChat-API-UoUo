@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
  * 日期工具类
  *
  * @author biezhi
- * @date 2018/1/19
+ * @since 2018/1/19
  */
 @Slf4j
 public class DateUtils {
@@ -39,7 +39,7 @@ public class DateUtils {
     /**
      * 获取字符串日期
      *
-     * @return
+     *
      */
     public static String getDateString() {
         return DATE_FORMAT.format(new Date());

@@ -4,7 +4,7 @@ import io.uouo.wechat.api.response.ApiResponse;
 
 /**
  * @author biezhi
- * @date 2018/1/18
+ * @since 2018/1/18
  */
 public class StringRequest extends ApiRequest<StringRequest, ApiResponse> {
 

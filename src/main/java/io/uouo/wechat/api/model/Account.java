@@ -14,7 +14,7 @@ import static io.uouo.wechat.api.constant.Constant.API_SPECIAL_USER;
  * 微信用户
  *
  * @author biezhi
- * @date 2018/1/19
+ * @since 2018/1/19
  */
 @Data
 public class Account implements Serializable {

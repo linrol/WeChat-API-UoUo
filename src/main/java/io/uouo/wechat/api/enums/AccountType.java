@@ -6,7 +6,7 @@ import lombok.Getter;
  * 账号类型
  *
  * @author biezhi
- * @date 2018/1/20
+ * @since 2018/1/20
  */
 @Getter
 public enum AccountType {

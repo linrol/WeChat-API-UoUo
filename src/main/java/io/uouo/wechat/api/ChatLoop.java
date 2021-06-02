@@ -12,7 +12,7 @@ import static io.uouo.wechat.api.enums.RetCode.*;
  * 轮训监听消息
  *
  * @author biezhi
- * @date 2018/1/21
+ * @since 2018/1/21
  */
 @Slf4j
 public class ChatLoop implements Runnable {

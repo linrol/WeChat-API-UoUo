@@ -10,7 +10,7 @@ import java.io.Serializable;
  * 登录会话
  *
  * @author biezhi
- * @date 2018/1/18
+ * @since 2018/1/18
  */
 @Data
 public class LoginSession implements Serializable {

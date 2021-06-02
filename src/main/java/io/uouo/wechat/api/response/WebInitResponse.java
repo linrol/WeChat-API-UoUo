@@ -11,7 +11,7 @@ import java.util.List;
  * 微信初始化响应
  *
  * @author biezhi
- * @date 2018/1/19
+ * @since 2018/1/19
  */
 @Data
 public class WebInitResponse {

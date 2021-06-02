@@ -6,7 +6,7 @@ import java.util.*;
  * 常量
  *
  * @author biezhi
- * @date 2018/1/18
+ * @since 2018/1/18
  */
 public interface Constant {
 

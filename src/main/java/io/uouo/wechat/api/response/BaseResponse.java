@@ -7,7 +7,7 @@ import lombok.Data;
  * 微信基础响应
  *
  * @author biezhi
- * @date 2018/1/19
+ * @since 2018/1/19
  */
 @Data
 public class BaseResponse {

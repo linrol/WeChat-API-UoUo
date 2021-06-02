@@ -18,7 +18,7 @@ import java.util.Map;
  * 二维码工具类
  *
  * @author biezhi
- * @date 2018/1/18
+ * @since 2018/1/18
  */
 @Slf4j
 public class QRCodeUtils {
@@ -59,7 +59,7 @@ public class QRCodeUtils {
      * 将二维码输出为 ASCII
      *
      * @param bitMatrix
-     * @return
+     *
      */
     private static String toAscii(BitMatrix bitMatrix) {
         StringBuilder sb = new StringBuilder();

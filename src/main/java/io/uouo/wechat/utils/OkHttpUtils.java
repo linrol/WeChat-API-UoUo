@@ -15,7 +15,7 @@ public class OkHttpUtils {
      * Setting testMode configuration. If set as testMode, the connection will skip certification check
      *
      * @param builder
-     * @return
+     *
      */
     public static OkHttpClient.Builder configureToIgnoreCertificate(OkHttpClient.Builder builder) {
         log.warn("Ignore Ssl Certificate");

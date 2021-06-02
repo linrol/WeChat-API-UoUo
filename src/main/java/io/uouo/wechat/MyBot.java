@@ -12,7 +12,7 @@ import lombok.extern.slf4j.Slf4j;
  * 我的小机器人
  *
  * @author biezhi
- * @date 2018/1/19
+ * @since 2018/1/19
  */
 @Slf4j
 public class MyBot extends WeChatBot {

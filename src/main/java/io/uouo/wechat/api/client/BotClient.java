@@ -19,7 +19,7 @@ import java.util.concurrent.TimeUnit;
  * 微信机器人 HTTP 发送端
  *
  * @author biezhi
- * @date 2018/1/18
+ * @since 2018/1/18
  */
 @Slf4j
 public class BotClient {
@@ -147,7 +147,7 @@ public class BotClient {
      * 设置超时
      *
      * @param request
-     * @return
+     *
      */
     private OkHttpClient timeout(ApiRequest request) {
         int timeoutMillis = request.getTimeout() * 1000;

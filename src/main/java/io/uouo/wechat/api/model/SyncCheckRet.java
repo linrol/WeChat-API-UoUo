@@ -8,7 +8,7 @@ import lombok.Data;
  * 心跳检查返回
  *
  * @author biezhi
- * @date 2018/1/20
+ * @since 2018/1/20
  */
 @Data
 @AllArgsConstructor

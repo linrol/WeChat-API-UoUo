@@ -27,7 +27,7 @@ import java.util.concurrent.LinkedBlockingQueue;
  * 微信机器人
  *
  * @author biezhi
- * @date 2018/1/18
+ * @since 2018/1/18
  */
 @Slf4j
 public class WeChatBot {

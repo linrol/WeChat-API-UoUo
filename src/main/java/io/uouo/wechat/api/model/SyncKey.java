@@ -10,7 +10,7 @@ import java.util.List;
  * SyncKey
  *
  * @author biezhi
- * @date 2018/1/19
+ * @since 2018/1/19
  */
 @Data
 public class SyncKey implements Serializable {

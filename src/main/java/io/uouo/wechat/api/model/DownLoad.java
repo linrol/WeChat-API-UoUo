@@ -8,7 +8,7 @@ import lombok.Data;
  * 下载请求Model
  *
  * @author biezhi
- * @date 2018/1/21
+ * @since 2018/1/21
  */
 @Data
 public class DownLoad {

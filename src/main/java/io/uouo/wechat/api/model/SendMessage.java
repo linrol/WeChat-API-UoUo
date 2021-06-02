@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
  * 发送消息体
  *
  * @author biezhi
- * @date 2018/1/20
+ * @since 2018/1/20
  */
 @Data
 @NoArgsConstructor

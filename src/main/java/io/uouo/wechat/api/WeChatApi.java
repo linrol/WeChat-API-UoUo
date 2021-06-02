@@ -10,14 +10,14 @@ import java.util.List;
  * 微信API
  *
  * @author biezhi
- * @date 2018/1/21
+ * @since 2018/1/21
  */
 public interface WeChatApi {
 
     /**
      * 扫码登录
      *
-     * @return
+     *
      */
     void login(boolean autoLogin);
 
@@ -36,14 +36,14 @@ public interface WeChatApi {
     /**
      * 心跳检测
      *
-     * @return
+     *
      */
     SyncCheckRet syncCheck();
 
     /**
      * 拉取新消息
      *
-     * @return
+     *
      */
     WebSyncResponse webSync();
 
@@ -51,7 +51,7 @@ public interface WeChatApi {
      * 处理消息，转换为 WeChatMessage 类型
      *
      * @param messages
-     * @return
+     *
      */
     List<WeChatMessage> handleMsg(List<Message> messages);
 
@@ -84,7 +84,7 @@ public interface WeChatApi {
      *
      * @param toUser
      * @param filePath
-     * @return
+     *
      */
     MediaResponse uploadMedia(String toUser, String filePath);
 
@@ -92,7 +92,7 @@ public interface WeChatApi {
      * 根据UserName获取账号信息
      *
      * @param id
-     * @return
+     *
      */
     Account getAccountById(String id);
 
@@ -100,7 +100,7 @@ public interface WeChatApi {
      * 根据备注或昵称查找账户
      *
      * @param name
-     * @return
+     *
      */
     Account getAccountByName(String name);
 
@@ -109,7 +109,7 @@ public interface WeChatApi {
      *
      * @param msgId  消息id
      * @param toUser 发送消息的人
-     * @return
+     *
      */
     boolean revokeMsg(String msgId, String toUser);
 
@@ -125,7 +125,7 @@ public interface WeChatApi {
      *
      * @param friend 好友的UserName
      * @param msg    添加好友时的消息
-     * @return
+     *
      */
     boolean addFriend(String friend, String msg);
 
@@ -150,7 +150,7 @@ public interface WeChatApi {
      *
      * @param member
      * @param group
-     * @return
+     *
      */
     boolean inviteJoinGroup(String member, String group);
 
@@ -159,7 +159,7 @@ public interface WeChatApi {
      *
      * @param oldTopic 旧群名
      * @param newTopic 新群名
-     * @return
+     *
      */
     boolean modifyGroupName(String oldTopic, String newTopic);
 }

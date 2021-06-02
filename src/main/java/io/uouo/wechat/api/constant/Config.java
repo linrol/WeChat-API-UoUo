@@ -9,7 +9,7 @@ import java.util.Properties;
  * 微信API配置
  *
  * @author biezhi
- * @date 2018/1/18
+ * @since 2018/1/18
  */
 public class Config {
 
@@ -53,7 +53,7 @@ public class Config {
      * 加载 ClassPath 下的配置文件
      *
      * @param filePath
-     * @return
+     *
      */
     public static Config load(String filePath) {
         Config config = new Config();

@@ -18,7 +18,7 @@ package io.uouo.wechat.api.enums;
  * UNKNOWN: 未知类型
  *
  * @author biezhi
- * @date 2018/1/19
+ * @since 2018/1/19
  */
 public enum MsgType {
 

@@ -7,7 +7,7 @@ import lombok.Data;
  * 个人名片信息
  *
  * @author biezhi
- * @date 2018/1/20
+ * @since 2018/1/20
  */
 @Data
 public class Recommend {

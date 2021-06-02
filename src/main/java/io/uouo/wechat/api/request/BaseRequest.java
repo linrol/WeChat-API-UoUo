@@ -9,7 +9,7 @@ import java.io.Serializable;
  * 微信基础请求参数
  *
  * @author biezhi
- * @date 2018/1/19
+ * @since 2018/1/19
  */
 @Data
 public class BaseRequest implements Serializable {

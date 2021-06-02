@@ -7,7 +7,7 @@ import lombok.Data;
  * Profile 信息
  *
  * @author biezhi
- * @date 2018/1/20
+ * @since 2018/1/20
  */
 @Data
 public class Profile {

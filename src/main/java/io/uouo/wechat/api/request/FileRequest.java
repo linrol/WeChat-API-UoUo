@@ -6,7 +6,7 @@ import io.uouo.wechat.api.response.FileResponse;
  * 下载文件请求
  *
  * @author biezhi
- * @date 2018/1/18
+ * @since 2018/1/18
  */
 public class FileRequest extends ApiRequest<FileRequest, FileResponse> {
 

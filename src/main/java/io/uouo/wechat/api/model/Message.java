@@ -8,7 +8,7 @@ import lombok.Data;
  * 微信原始消息体
  *
  * @author biezhi
- * @date 2018/1/20
+ * @since 2018/1/20
  */
 @Data
 public class Message {

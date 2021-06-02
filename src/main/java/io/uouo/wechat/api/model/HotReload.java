@@ -12,7 +12,7 @@ import java.util.Map;
  * 自动登录字段
  *
  * @author biezhi
- * @date 2018/1/21
+ * @since 2018/1/21
  */
 @Data
 public class HotReload {

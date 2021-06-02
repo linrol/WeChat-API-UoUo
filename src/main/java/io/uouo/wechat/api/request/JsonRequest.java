@@ -6,7 +6,7 @@ import io.uouo.wechat.api.response.JsonResponse;
  * JSON请求
  *
  * @author biezhi
- * @date 2018/1/18
+ * @since 2018/1/18
  */
 public class JsonRequest extends ApiRequest<JsonRequest, JsonResponse> {
 

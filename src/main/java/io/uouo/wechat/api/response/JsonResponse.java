@@ -13,7 +13,7 @@ import java.util.Map;
  * JSON 响应
  *
  * @author biezhi
- * @date 2018/1/18
+ * @since 2018/1/18
  */
 @Data
 @EqualsAndHashCode(callSuper = true)

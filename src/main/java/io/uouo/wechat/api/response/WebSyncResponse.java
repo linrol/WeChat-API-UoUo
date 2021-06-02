@@ -14,7 +14,7 @@ import java.util.List;
  * WebSync 响应
  *
  * @author biezhi
- * @date 2018/1/20
+ * @since 2018/1/20
  */
 @Data
 @EqualsAndHashCode(callSuper = true)

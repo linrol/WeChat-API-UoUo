@@ -6,7 +6,7 @@ import lombok.Getter;
  * 心跳检查状态码
  *
  * @author biezhi
- * @date 2018/1/21
+ * @since 2018/1/21
  */
 @Getter
 public enum RetCode {
