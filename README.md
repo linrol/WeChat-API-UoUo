@@ -43,9 +43,9 @@
 
 ```xml
 <dependency>
-    <groupId>io.uouo</groupId>
-    <artifactId>wechat</artifactId>
-    <version>1.0.0</version>
+  <groupId>io.uouo</groupId>
+  <artifactId>wechat-api-uouo</artifactId>
+  <version>1.0.0</version>
 </dependency>
 ```
 
