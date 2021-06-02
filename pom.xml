@@ -22,10 +22,14 @@
     <developers>
         <developer>
             <name>UoUoio</name>
-            <email>2940500@qq.com</email>
+            <email>UoUoio@icloud.com</email>
+            <organization>https://UoUo.io</organization>
+            <timezone>+8</timezone>
         </developer>
     </developers>
+
     <scm>
+        <tag>master</tag>
         <connection>scm:git@github.com:UoUoio/WeChat-API-UoUo.git</connection>
         <developerConnection>scm:git@github.com:UoUoio/WeChat-API-UoUo.git</developerConnection>
         <url>git@github.com:UoUoio/WeChat-API-UoUo.git</url>
@@ -94,7 +98,6 @@
             </plugin>
         </plugins>
     </build>
-
 
 
 </project>
