@@ -1,11 +1,28 @@
 # 重大更新!!   
 #   解决个人微信号无法登录网页版本的问题, 现已全面支持所有微信号
 
-**基于微信网页版JAVA项目, 升级为UOS协议, 解决大量用户不能登录网页版的问题**  [原项目地址](https://github.com/biezhi/wechat-api)
+**基于微信网页版JAVA项目, 升级为UOS协议, 解决大量用户不能登录网页版的问题**             [原项目地址](https://github.com/biezhi/wechat-api)              [原版本在线文档](https://biezhi.github.io/wechat-api/)
 
 
 
-[在线文档](https://biezhi.github.io/wechat-api/)
+## 本分支 TODO
+
+佛系更新  (公司业务不忙的情况下)
+
+> 1. 解决首次使用需要扫码两次的问题(已有解决思路)
+> 2. extspam参数自动生成变换
+> 3. 完成原版未开发完成的开发任务
+> 4. 完成本分支的开发文档(估计和原版本也不会有太大的差距.. 毕竟接口名什么的我都不会去动,防止之前的用户二次熟悉本项目)
+> 5. 重写出一个新的Golang版本
+
+
+
+## 原分支 TODO
+
+> 1. 接收位置
+> 2. 撤回消息查看
+> 3. 发送文件消息
+> 4. 多线程处理消息
 
 ## 特性
 
@@ -28,12 +45,6 @@
 - 撤回消息获取
 
 - JDK7+
-
-  
-
-## 存在问题
-
-> 1. 首次登陆需要扫码登录两次才可登录成功(已有解决思路)
 
 ## 使用
 
@@ -141,15 +152,8 @@ boolean sendFileName(String name, String filePath);
 
 [更多API见文档](https://biezhi.github.io/wechat-api/#/?id=api%e5%88%97%e8%a1%a8)
 
-## TODO
-
-1. 接收位置
-2. 撤回消息查看
-3. 发送文件消息
-4. 多线程处理消息
-
 ## 开源协议
 
-原开源协议 
+原项目开源协议[MIT](https://github.com/biezhi/wechat-api/blob/master/LICENSE) 
 
-当前版本开源协议协议[Mozilla ](https://github.com/UoUoio/WeChat-API-UoUo/blob/master/LICENSE)"使用时请注意声明作者名称:  青衫 / UoUoio"
+当前分支开源协议[Mozilla ](https://github.com/UoUoio/WeChat-API-UoUo/blob/master/LICENSE)   "使用时请注意声明作者名称:  **青衫 / UoUoio**"
