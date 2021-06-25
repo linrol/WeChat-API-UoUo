@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.util.List;
+import lombok.ToString;
 
 /**
  * WebSync 响应
@@ -18,6 +19,7 @@ import java.util.List;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+@ToString
 public class WebSyncResponse extends JsonResponse {
 
     @SerializedName("AddMsgCount")
