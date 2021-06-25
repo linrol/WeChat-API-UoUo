@@ -431,7 +431,7 @@ public class WeChatApiImpl implements WeChatApi {
 
         WebSyncResponse webSyncResponse = response.parse(WebSyncResponse.class);
         if (!webSyncResponse.success()) {
-            log.warn("获取消息失败");
+            log.warn("获取消息失败 {}", webSyncResponse.toString());
             return webSyncResponse;
         }
         bot.session().setSyncKey(webSyncResponse.getSyncKey());
