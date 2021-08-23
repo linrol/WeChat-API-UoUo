@@ -5,6 +5,7 @@ import io.uouo.wechat.api.response.MediaResponse;
 import io.uouo.wechat.api.response.WebSyncResponse;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 微信API
@@ -162,4 +163,10 @@ public interface WeChatApi {
      *
      */
     boolean modifyGroupName(String oldTopic, String newTopic);
+
+    /**
+     * 获取所有的联系人
+     * @return
+     */
+    Map<String, Account> getAccountMap();
 }
