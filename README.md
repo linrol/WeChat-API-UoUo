@@ -152,9 +152,9 @@ boolean sendFileName(String name, String filePath);
 
 [更多API见文档](https://biezhi.github.io/wechat-api/#/?id=api%e5%88%97%e8%a1%a8)
 
-## deploy jar
+## 发布Jar包到maven中央仓库
 ```shell script
-mvn clean deploy -P sonatype-oss-release -Darguments="gpg.passphrase=19950120" -s /Users/linrol/work/ide/maven/apache-maven-3.6.0/conf/settings_aliyun.xml
+mvn clean deploy -P sonatype-oss-release -Darguments="gpg.passphrase=19950120" -s /Users/linrol/work/ide/maven/apache-maven-3.6.0/conf/settings_linrol.xml
 ```
 
 ## 开源协议
