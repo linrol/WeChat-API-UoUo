@@ -48,7 +48,7 @@ public class QRCodeUtils {
         hintMap.put(EncodeHintType.MARGIN, 1);
         hintMap.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.L);
 
-        String       qrContent    = QRCodeUtils.readQRCode(qrCode, hintMap);
+        String       qrContent    = QRCodeUtils.readQRCode(qrCode);
         QRCodeWriter qrCodeWriter = new QRCodeWriter();
         BitMatrix    bitMatrix;
         bitMatrix = qrCodeWriter.encode(qrContent, BarcodeFormat.QR_CODE, 10, 10, hintMap);
@@ -82,14 +82,18 @@ public class QRCodeUtils {
      * 读取二维码信息
      *
      * @param filePath 文件路径
-     * @param hintMap  hintMap
      * @return 二维码内容
      */
-    private static String readQRCode(File filePath, Map hintMap) {
+    private static String readQRCode(File filePath) {
         try {
             BinaryBitmap binaryBitmap = new BinaryBitmap(new HybridBinarizer(
                     new BufferedImageLuminanceSource(ImageIO.read(new FileInputStream(filePath)))));
 
+            Map<DecodeHintType, Object> hintMap = new EnumMap<>(DecodeHintType.class);
+            // Now with zxing version 3.2.1 you could change border size (white border size to just 1)
+            // default = 4
+            hintMap.put(DecodeHintType.CHARACTER_SET, "UTF-8");
+            hintMap.put(DecodeHintType.PURE_BARCODE, Boolean.TRUE);
             Result qrCodeResult = new MultiFormatReader().decode(binaryBitmap, hintMap);
             return qrCodeResult.getText();
         } catch (Exception e) {
