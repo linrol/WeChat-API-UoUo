@@ -137,7 +137,7 @@ public class WeChatApiImpl implements WeChatApi {
                             log.info("请在手机上确认登录");
                             isLoggedIn = null;
                         }
-                    } else if ("408".equals(status)) {
+                    } else if (!"408".equals(status)) {
                         break;
                     }
                     DateUtils.sleep(300);
