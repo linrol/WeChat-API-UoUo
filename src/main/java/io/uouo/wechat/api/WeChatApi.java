@@ -169,4 +169,10 @@ public interface WeChatApi {
      * @return
      */
     Map<String, Account> getAccountMap();
+
+    /**
+     * 获取群组列表(包含群成员)
+     * @return
+     */
+    List<Account> getGroupList();
 }
