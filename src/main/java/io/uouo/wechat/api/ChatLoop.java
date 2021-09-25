@@ -1,9 +1,11 @@
 package io.uouo.wechat.api;
 
 import io.uouo.wechat.WeChatBot;
+import io.uouo.wechat.api.model.Message;
 import io.uouo.wechat.api.model.SyncCheckRet;
 import io.uouo.wechat.api.response.WebSyncResponse;
 import io.uouo.wechat.utils.DateUtils;
+import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 
 import static io.uouo.wechat.api.enums.RetCode.*;
@@ -52,7 +54,13 @@ public class ChatLoop implements Runnable {
                             if (null == webSyncResponse) {
                                 break;
                             }
-                            bot.addMessages(api.handleMsg(webSyncResponse.getAddMessageList()));
+                            List<Message> messages = webSyncResponse.getAddMessageList();
+                            if(6 == syncCheckRet.getSelector() && null !=  messages && messages.size() > 0) {
+                                messages.forEach(message -> {
+                                    message.setType(51);
+                                });
+                            }
+                            bot.addMessages(api.handleMsg(messages));
                             break;
                         default:
                             break;
