@@ -48,13 +48,11 @@ public class ChatLoop implements Runnable {
                     WebSyncResponse webSyncResponse = api.webSync();
                     switch (syncCheckRet.getSelector()) {
                         case 2:
+                        case 6:
                             if (null == webSyncResponse) {
                                 break;
                             }
                             bot.addMessages(api.handleMsg(webSyncResponse.getAddMessageList()));
-                            break;
-                        case 6:
-                            log.info("收到疑似红包消息");
                             break;
                         default:
                             break;
