@@ -858,7 +858,7 @@ public class WeChatApiImpl implements WeChatApi {
             // 联系人初始化
             case CONTACT_INIT:
                 log.info("联系人初始化");
-                return null;
+                return weChatMessageBuilder.text(content).build();
             // 系统消息
             case SYSTEM:
                 break;
