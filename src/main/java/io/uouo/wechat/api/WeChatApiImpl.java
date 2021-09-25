@@ -654,9 +654,9 @@ public class WeChatApiImpl implements WeChatApi {
 
     @Override
     public boolean inviteJoinGroup(String member, String group) {
-        String url = String.format("%s/webwxupdatechatroom?fun=addmember", bot.session().getUrl());
+        String url = String.format("%s/webwxupdatechatroom?fun=invitemember&pass_ticket=%s", bot.session().getUrl(), bot.session().getPassTicket());
         JsonResponse response = client.send(new JsonRequest(url).post().jsonBody()
-                .add("AddMemberList", member)
+                .add("InviteMemberList", member)
                 .add("ChatRoomName", group)
                 .add("BaseRequest", bot.session().getBaseRequest())
         );
