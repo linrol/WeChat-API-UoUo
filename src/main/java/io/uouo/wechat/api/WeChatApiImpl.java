@@ -480,7 +480,7 @@ public class WeChatApiImpl implements WeChatApi {
             });
 
             for (Account account : memberList) {
-                if (null == account.getUserName()) {
+                if (StringUtils.isNotEmpty(account.getUserName())) {
                     accountMap.put(account.getUserName(), account);
                 }
             }
