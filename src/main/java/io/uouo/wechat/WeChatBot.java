@@ -67,7 +67,7 @@ public class WeChatBot {
      * 接收消息重试次数
      */
     @Getter
-    private final int receiveRetryCount = 5;
+    private final int receiveRetryCount = 10;
 
     /**
      * 待处理的消息队列
