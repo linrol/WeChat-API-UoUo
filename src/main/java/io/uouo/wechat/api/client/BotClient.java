@@ -93,18 +93,18 @@ public class BotClient {
             }
 
             // 获取头部的Cookie,注意：可以通过Cooke.parseAll()来获取
-            List<Cookie> cookies = new ArrayList<>(Cookie.parseAll(okHttpRequest.url(), response.headers()));
+            String host = okHttpRequest.url().host();
+            List<Cookie> cookies = cookieStore.getOrDefault(host, new ArrayList<>());
+            if(!request.getUrl().contains("webwxlogout")) {
+                List<Cookie> responseCookies = new ArrayList<>(Cookie.parseAll(okHttpRequest.url(), response.headers()));
+                responseCookies.forEach(cookie -> {
+                    String name = cookie.name();
+                    cookies.removeIf(f -> f.name().equals(name));
+                    cookies.add(cookie);
+                });
+            }
             // 防止header没有Cookie的情况
             if (cookies.size() > 0) {
-                String host = okHttpRequest.url().host();
-                List<Cookie> existCookies = cookieStore.get(host);
-                if (existCookies != null) {
-                    cookies.forEach(cookie -> {
-                        String name = cookie.name();
-                        existCookies.removeIf(f -> f.name().equals(name));
-                        existCookies.add(cookie);
-                    });
-                }
                 cookieStore.put(host, cookies);
                 if (!"webpush.web.wechat.com".equals(host)) {
                     cookieStore.put("webpush.web.wechat.com", cookies);
