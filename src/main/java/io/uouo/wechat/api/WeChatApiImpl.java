@@ -17,6 +17,7 @@ import io.uouo.wechat.api.request.StringRequest;
 import io.uouo.wechat.api.response.*;
 import io.uouo.wechat.exception.WeChatException;
 import io.uouo.wechat.utils.*;
+import java.util.stream.Collectors;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.MediaType;
@@ -368,10 +369,15 @@ public class WeChatApiImpl implements WeChatApi {
      */
     private void startRevive() {
         bot.setRunning(true);
-        Thread thread = new Thread(new ChatLoop(bot));
-        thread.setName("wechat-listener");
-        thread.setDaemon(true);
-        thread.start();
+        String threadName = "wechat-listener";
+        Set<String> threadNames = Thread.getAllStackTraces().keySet().stream()
+            .map(Thread::getName).collect(Collectors.toSet());
+        if (!threadNames.contains(threadName)) {
+            Thread thread = new Thread(new ChatLoop(bot));
+            thread.setName("wechat-listener");
+            thread.setDaemon(true);
+            thread.start();
+        }
     }
 
     /**
