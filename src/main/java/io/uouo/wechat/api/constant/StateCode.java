@@ -9,6 +9,7 @@ package io.uouo.wechat.api.constant;
 public interface StateCode {
 
     String SUCCESS = "200";
+    String SUCCESS_WAIT = "201";
     String FAIL    = "400";
 
 }

@@ -47,10 +47,11 @@ public class ChatLoop implements Runnable {
                 } else if (syncCheckRet.getRetCode() == NORMAL) {
                     // 更新最后一次正常检查时间
                     bot.updateLastCheck();
-                    WebSyncResponse webSyncResponse = api.webSync();
                     switch (syncCheckRet.getSelector()) {
                         case 2:
                         case 6:
+                            WebSyncResponse webSyncResponse = api.webSync();
+                            bot.writeLoginSession();
                             if (null == webSyncResponse) {
                                 break;
                             }
@@ -73,7 +74,7 @@ public class ChatLoop implements Runnable {
                 log.error(e.getMessage());
                 retryCount += 1;
                 if (bot.getReceiveRetryCount() < retryCount) {
-                    bot.setRunning(false);
+                    api.logout();
                 } else {
                     DateUtils.sleep(1000);
                 }

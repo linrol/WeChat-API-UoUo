@@ -93,23 +93,32 @@ public class BotClient {
             }
 
             // 获取头部的Cookie,注意：可以通过Cooke.parseAll()来获取
-            List<Cookie> cookies = Cookie.parseAll(okHttpRequest.url(), response.headers());
+            List<Cookie> cookies = new ArrayList<>(Cookie.parseAll(okHttpRequest.url(), response.headers()));
             // 防止header没有Cookie的情况
-            if (cookies != null && cookies.size() > 0) {
-                cookieStore.put(okHttpRequest.url().host(), cookies);
-                if (!"webpush.web.wechat.com".equals(okHttpRequest.url().host())) {
+            if (cookies.size() > 0) {
+                String host = okHttpRequest.url().host();
+                List<Cookie> existCookies = cookieStore.get(host);
+                if (existCookies != null) {
+                    cookies.forEach(cookie -> {
+                        String name = cookie.name();
+                        existCookies.removeIf(f -> f.name().equals(name));
+                        existCookies.add(cookie);
+                    });
+                }
+                cookieStore.put(host, cookies);
+                if (!"webpush.web.wechat.com".equals(host)) {
                     cookieStore.put("webpush.web.wechat.com", cookies);
                 }
-                if (!"webpush.wx2.qq.com".equals(okHttpRequest.url().host())) {
+                if (!"webpush.wx2.qq.com".equals(host)) {
                     cookieStore.put("webpush.wx2.qq.com", cookies);
                 }
-                if (!"wx2.qq.com".equals(okHttpRequest.url().host())) {
+                if (!"wx2.qq.com".equals(host)) {
                     cookieStore.put("wx2.qq.com", cookies);
                 }
-                if (!"file.web.wechat.com".equals(okHttpRequest.url().host())) {
+                if (!"file.web.wechat.com".equals(host)) {
                     cookieStore.put("file.web.wechat.com", cookies);
                 }
-                if (!"web.wechat.com".equals(okHttpRequest.url().host())) {
+                if (!"web.wechat.com".equals(host)) {
                     cookieStore.put("web.wechat.com", cookies);
                 }
             }

@@ -315,6 +315,13 @@ public class WeChatBot {
      */
     public void updateLastCheck() {
         this.lastCheckTs = System.currentTimeMillis();
+        writeLoginSession();
+    }
+
+    /**
+     * 变更自动登陆session
+     */
+    public void writeLoginSession() {
         if (this.config().autoLogin()) {
             String file = this.config().assetsDir() + "/login.json";
             WeChatUtils.writeJson(file, HotReload.build(this.session()));
