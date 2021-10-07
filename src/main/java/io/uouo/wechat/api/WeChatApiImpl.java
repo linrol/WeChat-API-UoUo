@@ -309,14 +309,18 @@ public class WeChatApiImpl implements WeChatApi {
      * @return 返回uuid
      */
     private String pushLogin() {
+        // this.autoLogin();
         String uin = this.client.cookie("wxUin");
         if (StringUtils.isEmpty(uin)) {
             return null;
         }
-        String url = String.format("%s/cgi-bin/mmwebwx-bin/webwxpushloginurl?uin=%s",
-                Constant.BASE_URL, uin);
+        String url = String.format("https://%s/cgi-bin/mmwebwx-bin/webwxpushloginurl?uin=%s",
+            Constant.WEB_PUSH_URL.get(0), uin);
 
         JsonResponse jsonResponse = this.client.send(new JsonRequest(url));
+        if (!jsonResponse.success()) {
+            return null;
+        }
         return jsonResponse.getString("uuid");
     }
 
